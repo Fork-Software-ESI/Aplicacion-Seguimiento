@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/servicios.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <div class="container_logo">
+                <a href="../index.html">
+                    <img class="logo" src="../img/LOGO.png" alt="logo">
+                </a>
+            </div>
+            <ul class="nav_links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="menu-idioma">
+                <div class="seleccionar_idioma">
+                    <p class="idioma">Español</p>
+                </div>
+                <ul>
+                    <li class="eleccion-idioma">
+                        <a href="#" class="us">
+                            <p class="idioma">English</p>
+                        </a>
+                    </li>
+                    <li class="eleccion-idioma">
+                        <a href="#" class="es">
+                            <p class="idioma">Español</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="servicios">
+            <h1>Servicios</h1> <br><br>
+            <ul class="nav_servicios">
+                <li class="a ges_almacenes">
+                    <p class="texto-li">Gestión de Almacenes</p>
+                </li>
+                </li>
+                <li class="a ges_transporte">
+                    <p class="texto-li">Gestión de Transporte</p>
+                </li>
+                <li class="a ras_paquetes">
+                    <p class="texto-li">Rastreo de Paquetes</p>
+                </li>
+            </ul>
+            <div class="textos">
+                <div class="texto txt_almacen">
+                    <p class="txt">ALMACEN <br><br>
+                        Ofrecemos un servicio especializado en Gestión de Almacenes, encargándonos de la logística
+                        interna de paquetes, lotes, camiones en almacén, plataformas y estantes. Nuestra plataforma
+                        facilita un control eficiente, optimizando la distribución de productos y garantizando una
+                        gestión organizada. Con nosotros, los clientes pueden confiar en una administración completa de
+                        su inventario, asegurando un funcionamiento fluido y eficaz de su almacén.
+                </div>
+                <div class="texto txt_transporte">
+                    <p class="txt">TRANSPORTE <br><br>
+                        Ofrecemos un servicio integral de Gestión de Transporte, encargándonos de la administración de
+                        camiones y choferes. Nuestro enfoque se centra en la eficiencia, generando rutas óptimas para
+                        garantizar entregas eficaces. Con nosotros, los clientes pueden confiar en una gestión logística
+                        completa, asegurando un transporte eficiente y una administración profesional de cada aspecto
+                        del proceso de entrega.
+                </div>
+                <div class="texto txt_paquetes">
+                    <p class="txt">PAQUETE <br><br>
+                        Nuestro servicio de Rastreo de Paquetes permite a los clientes obtener información sobre el
+                        estado de sus envíos, así como conocer datos del conductor encargado de la entrega. A través de
+                        una plataforma fácil de usar, ofrecemos actualizaciones sobre el progreso del paquete y una
+                        estimación de la ruta a seguir desde nuestro almacén hasta su domicilio. Simplificamos el
+                        seguimiento para mantener a nuestros clientes informados y confiados en la gestión de sus
+                        envíos.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        $(document).ready(function () {
+            let elementoVisible = null;
+
+            $('.ges_almacenes').hover(function () {
+                if (elementoVisible) {
+                    elementoVisible.fadeToggle('slow', function () {
+                        $('.txt_almacen').fadeIn('slow');
+
+                    });
+                } else {
+                    $('.txt_almacen').fadeToggle('200');
+                }
+            });
+
+            $('.ges_transporte').hover(function () {
+                if (elementoVisible) {
+                    elementoVisible.fadeToggle('slow', function () {
+                        $('.txt_transporte').fadeIn('slow');
+                    });
+                } else {
+                    $('.txt_transporte').fadeToggle('200');
+
+                }
+            });
+
+            $('.ras_paquetes').hover(function () {
+                if (elementoVisible) {
+                    elementoVisible.fadeToggle('slow', function () {
+                        $('.txt_paquetes').fadeIn('slow');
+                    });
+                } else {
+                    $('.txt_paquetes').fadeToggle('200');
+                }
+            });
+        });
+    </script>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="empresa-container espacio">
+                <h3>Empresa:</h3>
+                <ul class="empresa">
+                    <li><a href="#sobre_nosotros">Sobre Nosotros</a></li>
+                    <li><a href="#">Nuestros Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="espacio">
+                <h3>Dónde Ubicarnos:</h3>
+                <div class="ubicacion">
+                    <i class="fa fa-map-marker"> Nos encontramos en calle 25 de agosto 1800</i>
+                </div>
+            </div>
+            <div id="contacto" class="contacto espacio">
+                <div class="container-redes">
+                    <ul class="redes">
+                        <li class="numero">+598 *** ***</li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=wUWMjdo9t6k&ab_channel=Temppo" target="_blank"><i
+                                    class="red fa fa-youtube-play"></i></a>
+                            <a href="https://www.instagram.com/forksoftware.uy/" target="_blank"><i
+                                    class="red fa fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/fork-software-55b93929a/" target="_blank"><i
+                                    class="red fa fa-linkedin"></i></a><br>
+                        </li>
+                        <li class="email"> forksoftware.esi@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

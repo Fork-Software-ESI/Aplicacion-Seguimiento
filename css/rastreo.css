@@ -1,0 +1,59 @@
+
+main{
+    padding: 75px 0;
+}
+
+.container_opciones{
+    margin: 60px 0;
+    display: flex;
+    text-align: center;
+}
+
+.boton{
+    padding: 5px;
+}
+
+.boton:hover{
+    background-color: #0088ae;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.a{
+    margin-right: 30px;
+}
+
+h1,h2,p{
+    color: white;
+}
+
+.contenedor_rastreo{
+    width: 100%;
+    height: auto;
+    margin: 70px 0;
+}
+
+.rastreo{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-image: url(../img/preview.png);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+@media (max-width:500px){
+    .contenedor_rastreo{
+        padding: 0 1em;
+    }
+    .rastreo{
+        width: 80%;
+        height: 250px;
+    }
+}

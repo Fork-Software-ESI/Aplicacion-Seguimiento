@@ -1,0 +1,281 @@
+
+.contenedor_rastreo{
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    margin: 50px 0 80px 0;
+}
+
+.contenedor_rastreo h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor_rastreo fieldset{
+    border: none;
+}
+
+.rastreo{
+    margin: auto;
+    width: 800px;
+    height: 200px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: 0 0 10px #FFFFFF;
+    border-radius: 20px;
+}
+
+.codigo{
+    display: flex;
+    width: 400px;
+    height: 60%;
+    padding: 10px;
+    margin: auto;
+    align-items: center;
+}
+
+.codigo input[type="text"]{
+    width: 200px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+
+.codigo input[type="submit"]{
+    width: 100px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.container{
+    margin-bottom: 100px;
+    padding: 2%;
+    margin-bottom: 4%;
+}
+
+.formulario {
+    width: 800px;
+    margin: auto;
+}
+
+.formulario fieldset {
+    border-radius: 20px;
+    padding: 30px 20px;
+    border-color: white;
+    color: white;
+}
+
+.formulario fieldset h2{
+    margin-bottom: 30px;
+}
+
+.contenedor_fieldset{
+    display: flex;
+}
+
+.contenedor_fieldset .img{
+    width: 300px;
+    /*border: solid 1px white;*/
+}
+
+::placeholder { color: black; }
+
+.dentro_formulario input{
+    width: 80%;
+    height: 35px;
+    margin: 10px 13px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+
+.ingresar_crear input[type="submit"] {
+    padding: 0;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin: auto;
+}
+
+input[type="submit"]:hover {
+    transition: all 1s ease 0s;
+    background-color: #0088ea;
+}
+
+.ingresar_crear{
+    margin: 10px 30px;
+    text-align: center;
+}
+
+.dentro_formulario a{
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+.dentro_formulario a:hover{
+    color: #0088ae;
+}
+
+.slideshow-container {
+    display: block;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 80px;
+    z-index: 1;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.aaa{
+    margin-bottom: 120px;
+}
+
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #717171;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #e1e1e1;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#sobre_nosotros{
+    width: 100%;
+    margin-top: 200px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 10px #FFFFFF;
+}
+
+.nosotros{
+    display: flex;
+    height: 300px;
+    padding: 20px 50px;
+    align-items: center;
+}
+
+.img_nosotros{
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+h2{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.sobre_nosotros p{
+    flex-wrap: wrap;
+    color: white;
+}
+
+@media (max-width:1020px){
+    .nosotros{
+        display: block;
+        height: auto;
+    }
+    .img_nosotros{
+        display: none;
+    }
+}
+
+@media(max-width:890px){
+    fieldset{
+        padding: 20px 5px;
+    }
+    .contenedor_fieldset {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor_fieldset .img{
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+    .contenedor_fieldset img{
+        width: 200px;
+    }
+    .ingresar_crear{
+        margin-left: auto;
+    }
+    .dentro_formulario{
+        text-align: center;
+    }
+    .formulario{
+        width: auto;
+    }
+    .rastreo{
+        width: 100%;
+    }
+    .codigo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .codigo input[type="text"]{
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

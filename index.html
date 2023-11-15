@@ -1,1 +1,166 @@
-!
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fork Software</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/LOGO.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <div class="container_logo">
+                <a href="index.html">
+                    <img class="logo" src="img/LOGO.png" alt="logo">
+                </a>
+            </div>
+            <ul class="nav_links">
+                <li><a href="index.html" data-close-menu>Inicio</a></li>
+                <li><a href="#sobre_nosotros" data-close-menu>Sobre nosotros</a></li>
+                <li><a href="html/servicios.html" data-close-menu>Servicios</a></li>
+                <li><a href="#contacto" data-close-menu>Contacto</a></li>
+            </ul>
+
+            <div class="menu-idioma">
+                <div class="seleccionar_idioma">
+                    <p class="idioma">Español</p>
+                </div>
+                <ul>
+                    <li class="eleccion-idioma">
+                        <a href="#" class="us">
+                            <p class="idioma">English</p>
+                        </a>
+                    </li>
+                    <li class="eleccion-idioma">
+                        <a href="#" class="es">
+                            <p class="idioma">Español</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="img/camion-caja-mapa.jpg" style="width:100%;">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/supply-chain-representation-still-life.jpg" style="width:100%;">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/vehicles-laptop-supply-chain-representation.jpg" style="width:100%;">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br>
+
+        <div class="aaa" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="container">
+            <h1>Bienvenido a SATP</h1>
+            <div class="formulario">
+                <form action="html/rastreo.html" method="get">
+                    <fieldset>
+                        <div class="contenedor_fieldset">
+                            <div class="img">
+                                <img src="img/LOGO.png" height="200px" width="200px" alt="logo">
+                            </div>
+                            <div class="dentro_formulario">
+                                <h2 style="text-align: center;">Rastree su pedido</h2>
+                                <input type="text" name="codigo" maxlength="6" placeholder="#codigo" required>
+                                <div class="ingresar_crear">
+                                    <input type="submit" value="RASTREAR">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div id="sobre_nosotros">
+            <div class="nosotros">
+                <div class="img_nosotros">
+                    <img src="img/arrangement-with-laptop-boxes.jpg" alt="IMG" width="250px" height="auto">
+                </div>
+                <div class="texto">
+                    <h2>Sobre Nosotros:</h2>
+                    <p style="color: white;">
+                        Fork Software es una empresa de informática especializada en el
+                        control y supervisión efectiva del transporte de paquetería.
+                        Su enfoque principal es garantizar la seguridad y eficiencia
+                        de cada envío, proporcionando a las empresas una visibilidad
+                        completa y en tiempo real de sus paquetes. A través de su plataforma
+                        tecnológica avanzada, Fork Software permite un seguimiento detallado
+                        de los envíos, brindando a sus clientes la tranquilidad de saber
+                        dónde se encuentran sus paquetes en todo momento. Aunque actualmente
+                        operan exclusivamente en Uruguay, la empresa tiene planes de
+                        expansión hacia otros países cercanos en el futuro. Con un enfoque
+                        en la innovación y la colaboración con otras empresas, Fork Software
+                        se esfuerza por adaptarse a las necesidades futuras de sus clientes
+                        en el campo de la logística.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="empresa-container espacio">
+                <h3>Empresa:</h3>
+                <ul class="empresa">
+                    <li><a href="#sobre_nosotros">Sobre Nosotros</a></li>
+                    <li><a href="html/servicios.html">Nuestros Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="espacio">
+                <h3>Dónde Ubicarnos:</h3>
+                <div class="ubicacion">
+                    <i class="fa fa-map-marker"> Nos encontramos en calle 25 de agosto 1800</i>
+                </div>
+            </div>
+            <div id="contacto" class="contacto espacio">
+                <div class="container-redes">
+                    <ul class="redes">
+                        <li class="numero">+598 ***</li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=wUWMjdo9t6k&ab_channel=Temppo" target="_blank"><i
+                                    class="red fa fa-youtube-play"></i></a>
+                            <a href="https://www.instagram.com/forksoftware.uy/" target="_blank"><i
+                                    class="red fa fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/fork-software-55b93929a/" target="_blank"><i
+                                    class="red fa fa-linkedin"></i></a><br>
+                        </li>
+                        <li class="email"> forksoftware.esi@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

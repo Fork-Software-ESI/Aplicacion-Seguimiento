@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="=width=device-width, initial-scale=1.0">
+    <title>Rastreo</title>    
+    <link rel="stylesheet" href="../css/rastreo.css">
+    <link rel="stylesheet" href="../css/tabla.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <div class="container_logo">
+                <a href="../index.html">
+                    <img class="logo" src="../img/LOGO.png" alt="logo">
+                </a>
+            </div>
+            <ul class="nav_links">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+            </ul>
+            <div class="menu-idioma">
+                <div class="seleccionar_idioma">
+                    <p class="idioma">Español</p>
+                </div>
+                <ul>
+                    <li class="eleccion-idioma">
+                        <a href="#" class="us"><p class="idioma">English</p></a>
+                    </li>
+                    <li class="eleccion-idioma"> 
+                        <a href="#" class="es"><p class="idioma">Español</p></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedor_lista">
+            <h1>Informacion del Paquete - Rastreo del Paquete</h1>
+            <div class="paquete">
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Descripcion</th>
+                            <th>Lugar de Entrega</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td data-cell="ID">...</td>
+                        <td data-cell="Descripcion">...</td>
+                        <td data-cell="Lugar de Entrega">...</td>
+                        <td data-cell="Estado">...</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="contenedor_rastreo">
+            <a href="https://www.google.com/maps" target="_blank">
+                <div class="rastreo"></div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="empresa-container espacio">
+                <h3>Empresa:</h3>
+                <ul class="empresa">
+                    <li><a href="#sobre_nosotros">Sobre Nosotros</a></li>
+                    <li><a href="servicios.html">Nuestros Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="espacio">
+                <h3>Dónde Ubicarnos:</h3>
+                <div class="ubicacion">
+                    <i class="fa fa-map-marker"> Nos encontramos en calle 25 de agosto 1800</i>
+                </div>
+            </div>
+            <div id="contacto" class="contacto espacio">
+                <div class="container-redes">
+                    <ul class="redes">
+                        <li class="numero">+598 *** ***</li>
+                        <li>
+                            <a href="https://www.youtube.com/watch?v=wUWMjdo9t6k&ab_channel=Temppo" target="_blank"><i class="red fa fa-youtube-play"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i class="red fa fa-instagram"></i></a>
+                            <a href="https://uy.linkedin.com/" target="_blank"><i class="red fa fa-linkedin"></i></a><br>
+                        </li>
+                        <li class="email"> forksoftware.esi@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

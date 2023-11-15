@@ -1,0 +1,93 @@
+h1{
+    color: white;
+}
+
+.servicios{
+    text-align: center;
+    padding: 5% 0;
+}
+
+ul.nav_servicios{
+    display: flex;
+    padding: 0 5%;
+    justify-content: space-evenly;
+}
+
+.a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 250px;
+    height: 250px;
+    border: 1px solid white;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.textos{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin: 70px;
+}	
+
+.texto{
+    display: none;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.txt{
+    padding: 30px;
+
+}
+
+li.ges_almacenes{
+    background-image: url(../img/vehicles-laptop-supply-chain-representation.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.7s ease 0s;
+}
+
+li.get_almacenes:hover{
+    transition: all 0.7s ease 0s;
+    width: 300px;
+    height: 300px;
+}
+
+li.ges_transporte{
+    background-image: url(../img/camion-caja-mapa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ras_paquetes{
+    background-image: url(../img/camion-mapa2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto-li{
+    backdrop-filter: blur(10px);
+}
+
+@media (max-width:890px){
+    .nav_servicios{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .a{
+        margin: 10px auto;
+    }
+    .ges_transporte{
+        margin: 30px auto;
+    }
+}
