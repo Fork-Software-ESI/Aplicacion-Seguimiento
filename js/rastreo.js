@@ -35,6 +35,9 @@ function buscarPaquete(Codigo) {
             var celdaID = fila.insertCell();
             celdaID.innerHTML = paquete.ID;
 
+            var celdaCodigo = fila.insertCell();
+            celdaCodigo.innerHTML = paquete.Codigo;
+
             var celdaDescripcion = fila.insertCell();
             celdaDescripcion.innerHTML = paquete.Descripcion;
 
