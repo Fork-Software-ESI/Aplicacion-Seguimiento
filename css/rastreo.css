@@ -36,6 +36,12 @@ h1,h2,p{
     margin: 70px 0;
 }
 
+#mapa {
+    width: 800px;
+    height: 500px;
+    margin: auto; /* Centrar horizontalmente el mapa */
+}
+
 .rastreo{
     width: 400px;
     height: 400px;
